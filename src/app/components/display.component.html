@@ -1,0 +1,11 @@
+<div>
+  <button>Display</button>
+  <button routerLink="/edit">Edit</button>
+  <ul>
+    <li *ngFor="let weekday of weekdays">
+      <div>
+        {{weekday.dayOfWeek}} {{weekday.date | date:'medium'}}
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="weekDayForm" (ngSubmit)="onSubmit()">
+    <input type="date" formControlName="date1" />
+    <input type="date" formControlName="date2" />
+    <input type="date" formControlName="date3" />
+    <input type="date" formControlName="date4" />
+    <input type="date" formControlName="date5" />
+    <input type="date" formControlName="date6" />
+    <input type="date" formControlName="date7" />
+    <button type="submit" [disabled]="!weekDayForm.valid">Submit</button>
+    <button routerLink="">Cancel</button>
+  </form>
+</div>
