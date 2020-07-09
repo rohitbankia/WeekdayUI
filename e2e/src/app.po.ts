@@ -6,6 +6,11 @@ export class AppPage {
   }
 
   getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+    return element(by.css('app-root h1')).getText() as Promise<string>;
+  }
+
+  getFirstLine(): Promise<string> {
+    console.log(element(by.css('app-root div ul li')));
+    return element(by.css('app-root div ul li')).getText() as Promise<string>;
   }
 }
